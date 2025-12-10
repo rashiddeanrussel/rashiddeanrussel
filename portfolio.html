@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashid Dean Russel - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <style>
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .header-content .name {
+            text-align: left;
+        }
+        .header-content .profile-pic {
+            margin-left: 20px;
+        }
+
+        .portfolio-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 1000px;
+            background: rgba(15, 37, 115, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            overflow-y: auto;
+            max-height: 90%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <header>
+            <div class="header-top">
+                <button id="logoutBtn">Logout</button>
+            </div>
+            <section id="home" class="section home">
+                <h2>Welcome</h2>
+                <p>Welcome to my personal portfolio! Explore and get to know more about me, my projects, and my interests.</p>
+            </section>
+            <div class="header-content">
+                <div class="name">
+                    <h1>Rashid Dean A. Russel</h1>
+                    <p>BSINFOTECH-1 | Caraga State University</p>
+                </div>
+                <div class="profile-pic">
+                    <img src="img.jpg" alt="Rashid Dean A. Russel">
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Rashid, a BSINFOTECH-1 student at Caraga State University. I’m passionate about technology and currently diving into web development. When I’m not coding, you can find me enjoying sports or gaming online.</p>
+            <p><strong>Expertise:</strong> Basketball, web development (currently learning)</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="skill-card">
+                <h3>Basketball</h3>
+                <p>Playing basketball is my strong suit. Teamwork, strategy, and stamina are my key strengths.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>I am currently learning web development, exploring HTML, CSS, and JavaScript to build interactive websites.</p>
+            </div>
+        </section>
+
+        <section id="interests" class="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <div class="hobby-list">
+                <div class="hobby">Volleyball</div>
+                <div class="hobby">Basketball</div>
+                <div class="hobby">Online Gaming</div>
+                <div class="hobby">Sleeping</div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>A simple website created using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>An interactive form validation app.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Three</h3>
+                    <p>A responsive landing page showcasing clean UI design.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            &copy; 2025 Rashid Dean A. Russel | Made with ❤️
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

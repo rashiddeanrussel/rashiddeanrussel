@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent !important;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(25, 170, 214);
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.navbar a, 
+.navbar .btnLogin-popup {
+    margin-right: 40px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgb(25, 170, 214);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnLogin-popup:hover {
+    color: #ffffff;
+}
+
+.navbar .btnLogin-popup::before {
+    display: none;
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding: 0 45px 0 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #00c3ff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #009fd1;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #00c3ff;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1 !important;
+}
